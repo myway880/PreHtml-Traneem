@@ -1,0 +1,55 @@
+﻿h1, ol, ul, li, button {
+	margin: 0;
+	padding: 0;
+}
+img {
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: 0;
+}
+body, html {
+	min-width: 400px;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	background-attachment: fixed;
+}
+div {
+	color: #f8f48a;
+	width: 100%;
+	font-size: 20px;
+	text-align: center;
+	font-family: "Droid Arabic Naskh";
+	font-style: normal;
+	font-weight: bold;
+	clear: both;
+}
+div {
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+div.c1 {
+	color: #ffc870;
+}
+@media screen and (min-width: 600px) {
+  div {
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 800px) {
+  div {
+    font-size: 60px;
+  }
+}
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (min-width: 1000px) {
+  div {
+    font-size: 80px;
+  }
+}
