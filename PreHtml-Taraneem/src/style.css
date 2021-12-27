@@ -1,6 +1,30 @@
-﻿h1, ol, ul, li, button {
+﻿
+@font-face {
+  font-family: "Droid Arabic Naskh";
+  src: url(../src/fonts/DroidNaskh-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Droid Arabic Naskh";
+  src: url(../src/fonts/DroidNaskh-Bold.ttf) format("truetype");
+  font-weight: Bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Noto Kufi Arabic";
+  src: url(../src/fonts/NotoKufiArabic-ExtraBold.ttf) format("truetype");
+  font-weight: Bold;
+  font-style: normal;
+}
+
+
+
+h1, ol, ul, li, button {
 	margin: 0;
 	padding: 0;
+	text-align: right;
+
 }
 img {
 	position: absolute;
@@ -18,25 +42,229 @@ body, html {
 }
 div {
 	color: #f8f48a;
+   	color: white;
 	width: 100%;
 	font-size: 20px;
 	text-align: center;
-	font-family: "Droid Arabic Naskh";
+	font-family: "Noto Kufi Arabic";
 	font-style: normal;
 	font-weight: bold;
 	clear: both;
 }
-div {
+div.hymn {
    text-shadow:
-       3px 3px 0 #000,
+       5px 5px 0 #000,
      -1px -1px 0 #000,  
       1px -1px 0 #000,
       -1px 1px 0 #000,
        1px 1px 0 #000;
+       
+  text-stroke: 7px #ffffff;   
 }
 div.c1 {
-	color: #ffc870;
+	color: #d0d0d0;
 }
+div.c2 {
+	color: #d0d0d0;
+}
+div.c3 {
+	color: #d0d0d0;
+}
+div.c4 {
+	color: #d0d0d0;
+}
+div.c5 {
+	color: #d0d0d0;
+}
+div.c6 {
+	color: #d0d0d0;
+}
+div.c7 {
+	color: #d0d0d0;
+}
+
+
+
+
+
+
+body.index, html.index {
+  	background-color : black;
+	min-width: 400px;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	background-size: 100%;
+	background-attachment: fixed;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* top par nav */
+
+#nav {
+  float: right;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width:100%;
+  z-index:5;
+
+}
+#nav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: right;
+  padding: 2px 10px;
+  text-decoration: none;
+  font-size: 12px;
+}
+#nav a:hover {
+  background-color: gray;
+  color: #f2f2f2;
+}
+#nav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+
+/* links */
+
+
+div.links {
+	height: 90%;
+	font-size: 20px;
+	text-align: right;
+	margin-top: 30px;
+}
+
+
+
+a:link {
+text-decoration: none;
+text-shadow:5px 5px 0px #000,-2px -2px 0px #000, 2px -2px 0px #000,-2px 2px 0px #000, 2px 2px 0px #000;
+
+}
+a:visited {
+text-decoration: none;
+text-shadow:0px 0px 0px #000,0px 0px 0px #000, 0px 0px 0px #000, 0px 0px 0px #000, 0px 0px 0px #000;
+
+}
+a:hover {
+color: white;
+text-decoration: none;
+text-shadow:0px 0px 0px #000,0px 0px 0px #000, 0px 0px 0px #000, 0px 0px 0px #000, 0px 0px 0px #000;
+}
+a:active {
+text-decoration: underline;
+}
+a:link, a:visited {
+color: white;
+padding: 5px 5px;
+text-align: right;
+text-decoration: none;
+display: inline-block;
+text-shadow:0px 0px 0px #000,0px 0px 0px #000, 0px 0px 0px #000, 0px 0px 0px #000, 0px 0px 0px #000;
+
+}
+
+
+iframe {
+  display: block;
+  border: 0px ;
+  float: left;
+  text-align: center;
+  top: 20px;
+  width: 99%;
+  height: 99%;
+  position: fixed;
+  z-index:1;
+}
+
+
+
+
+
+
+
+/* Style the links inside the sidenav */
+#Sidenav a {
+  position: absolute; /* Position them relative to the browser window */
+  left: -250px; /* Position them outside of the screen */
+  transition: 0.3s; /* Add transition on hover */
+  padding: 10px; /* 15px padding */
+  width: 250px; /* Set a specific width */
+  height: 100%; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 16px; /* Increase font size */
+  color: white; /* White text color */
+  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+  background-color: #04AA6D;
+  top: 0px;
+  z-index:10;
+  }
+
+#Sidenav a:hover {
+  left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (min-width: 600px) {
   div {
     font-size: 40px;
